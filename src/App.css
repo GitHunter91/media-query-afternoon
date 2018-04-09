@@ -1,0 +1,72 @@
+body{
+  background-image: url('https://static1.squarespace.com/static/5537fc59e4b0ca81a8906207/t/5722567bb09f95643e6fa09b/1461868247985/shutterstock_257132974%281%29.jpg?format=1500w');
+} 
+.main-nav{
+  width: 80%;
+  margin:0 auto;
+  background-color: black;
+  color: gold;
+  font-family: 'Kaushan Script', cursive;
+  font-weight:400;
+  display:flex;
+  justify-content: space-between;
+  padding: 32px 100px;
+}
+
+.phone{
+  background-color: gold;
+}
+main{
+  padding: 50px;
+}
+
+@media(min-width: 992px){
+  nav.main-nav{
+    background: transparent;
+    padding:16px;
+    font-size:30px;
+  }
+  div.desktop > div{
+    display:inline-flex;
+    color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size:20px;
+    margin-top:30px;
+    padding-left:10px;
+   }
+   .phone{
+     display:none;
+   }
+ }
+
+@media(max-width: 991px){
+  nav.main-nav{
+    background: black;
+  }
+.desktop{
+  display:none;
+}
+.phone > button{
+  background-color: gold;
+  color: white;
+  padding: 10px;
+  display:flex;
+  border-radius: 3px;
+}
+}
+
+.drawer{
+  padding: 0px 32px;
+  background-color: black;
+  color:white;
+  left: 0;
+  top:-190px;
+  width:100vw;
+  position:fixed;
+  transition:1s;
+  z-index:-1;
+}
+
+.open{
+  top: 100px;
+}
